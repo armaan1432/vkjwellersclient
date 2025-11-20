@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* Custom theme overrides */
+:root {
+  --accent: #910046; /* Primary color */
+  --alt-bg: #fff8d7; /* Alternate section background */
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background-color: var(--alt-bg); /* Default background */
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-title {
+  font-size: 64px;
+  line-height: 0.95;
+  color: white; /* Ensures hero text is visible over red overlay */
+}
+
+/* Section backgrounds for consecutive sections */
+.section-primary {
+  background-color: var(--accent);
+  color: white;
+}
+
+.section-alt {
+  background-color: var(--alt-bg);
+  color: var(--accent);
+}
+
+/* Buttons & links */
+.btn-primary {
+  background-color: var(--accent);
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #660000; /* Darker shade on hover */
+}
